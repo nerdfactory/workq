@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workq</title>
+    <style>
+      .container { display: grid; grid-template-columns: repeat(6, 1fr); }
+      .main { grid-column: 2 / 5; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header></header>
+      <div class="main">
+        <div class="search-form">
+          <form action="#">
+            <legend class="search-form__legend">Search for posts</legend>
+            <input class="search-form__text" type="text" name="query" value="" placeholder="" disabled="disabled">
+            <input class="search-form__button" type="submit" value="Search" disabled="disabled">
+          </form>
+        </div>
+        <div class="search-results"></div>
+      </div>
+      <footer></footer>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.0/vue.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+    <script type="text/javascript">
+      document.getElementsByClassName("search-form__button").item(0).disabled = false;
+      document.getElementsByClassName("search-form__text").item(0).disabled = false;
+    </script>
+  </body>
+</html>
