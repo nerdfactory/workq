@@ -55,7 +55,7 @@ const app = new Vue({
   <div class="main">
     <div class="search-form">
       <form action="#">
-        <legend class="search-form__legend">Get carified!</legend>
+        <legend class="search-form__legend">Search for posts</legend>
         <input class="search-form__text" v-model="query" type="text" name="query" value="" placeholder="" disabled="disabled">
         <input class="search-form__button" v-on:click="sub" type="submit" value="Search" disabled="disabled" method="POST">
       </form>
